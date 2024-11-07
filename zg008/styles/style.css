@@ -1,0 +1,60 @@
+body {
+	background-image:url(bg.jpg);
+	background-color:#fff;
+	font-family:arial, sans serif;
+	font-size:11px;
+	line-height:15px;
+	color:#black;
+	margin:0px;
+}
+
+.page-wrapper {
+	margin-left:0px;
+	margin-top:0px;
+	padding:0px;
+	width:684px;
+	z-index:1;
+}
+
+.intro {
+	place-items: center;
+    	text-align: center;
+	width:275px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:2;
+}
+
+.supporting {
+	width:450px;
+	position:absolute;
+	left:270px;
+	top:0px;
+	z-index:2;
+}
+
+.summary, .preamble, .explanation, .participation {
+	padding:7px;
+	margin:5px;
+	border-left:1px solid #aaa;
+	border-top:1px solid #aaa;
+	border-right:1px solid #333;
+	border-bottom:1px solid #333;
+	background-image:url(../images/orb.png);
+	background-size:25%;
+}
+
+h3 {
+	font-family:arial, sans serif;
+	color:#black;
+	font-size:11px;
+	font-weight:bold;
+	margin-top:3px;
+	margin-bottom:0px;
+}
+
+p {
+	margin:6px;
+}
+
