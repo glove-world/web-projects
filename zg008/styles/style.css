@@ -58,3 +58,7 @@ p {
 	margin:6px;
 }
 
+audio {
+	display:block;
+	border:10px solid red;
+}
