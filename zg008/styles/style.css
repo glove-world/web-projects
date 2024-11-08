@@ -1,11 +1,15 @@
 body {
-	background-image:url(bg.jpg);
 	background-color:#fff;
 	font-family:arial, sans serif;
 	font-size:11px;
 	line-height:15px;
 	color:#black;
 	margin:0px;
+}
+.centering {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .page-wrapper {
@@ -16,25 +20,33 @@ body {
 	z-index:1;
 }
 
-.intro {
+.banner {
 	place-items: center;
     	text-align: center;
+	width:720px;
+	position:absolute;
+/*	left:0px;*/ 
+	top:0px;
+	z-index:3;
+}
+
+.left-column {
 	width:275px;
 	position:absolute;
 	left:0px;
-	top:0px;
+	top:109px;
 	z-index:2;
 }
 
-.supporting {
+.center-column {
 	width:450px;
 	position:absolute;
-	left:270px;
-	top:0px;
+/*	left:270px;*/
+	top:109px;
 	z-index:2;
 }
 
-.summary, .preamble, .explanation, .participation {
+.banner-text, .navigation, .explanation, .participation {
 	padding:7px;
 	margin:5px;
 	border-left:1px solid #aaa;
@@ -60,5 +72,4 @@ p {
 
 audio {
 	display:block;
-	border:10px solid red;
 }
