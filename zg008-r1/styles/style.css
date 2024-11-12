@@ -2,6 +2,8 @@ body {
 	font-family:arial, sans serif;
 	font-size:11px;
 	line-height:15px;
+	background-image:url(../images/subtle-dots-black.png);
+	background-color:#3b3b3b;
 }
 
 .page-centering {
@@ -34,13 +36,29 @@ body {
   	grid-column-end: 3;
 }
 
-.banner, .index, .content{
+.banner{
+	display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:7px;
+        margin:5px; /*distance between boxes vertically*/
+        border-left:1px solid #b5b5b5;
+        border-top:1px solid #b5b5b5;
+        border-right:2px solid #000000;
+        border-bottom:2px solid #000000;
+	background-size:cover;
+	background-image:url(../images/sinew-miracle-banner.png);
+        background-color:#d9d9d9;
+}
+
+.index, .content{
 	padding:7px;
 	margin:5px; /*distance between boxes vertically*/ 
-	border-left:1px solid;
-	border-top:1px solid;
-	border-right:1px solid;
-	border-bottom:1px solid;
+	border-left:1px solid #b5b5b5;
+	border-top:1px solid #b5b5b5;
+	border-right:2px solid #000000;
+	border-bottom:2px solid #000000;
+	background-color:#d9d9d9;
 }
 
 h3 {
@@ -50,4 +68,9 @@ h3 {
 	font-weight:bold;
 	margin-top:3px;
 	margin-bottom:0px;
+}
+
+button {
+	color:#b22222;
+
 }
