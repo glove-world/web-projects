@@ -1,5 +1,15 @@
+@font-face {
+	font-family: "Grotesk-Regular";
+	src: url("../fonts/HKGrotesk-Thin.woff") format("woff");
+}
+
+@font-face {
+        font-family: "Grotesk-Bold";
+        src: url("../fonts/HKGrotesk-Medium.woff") format("woff");
+}
+
 body {
-	font-family:arial, sans serif;
+	font-family:Grotesk-Regular;
 	font-size:11px;
 	line-height:15px;
 	background-image:url(../images/subtle-dots-black.png);
@@ -62,9 +72,9 @@ body {
 }
 
 h3 {
-	font-family:arial, sans serif;
+	font-family:Grotesk-Bold;
 	color:#black;
-	font-size:11px;
+	font-size:22px;
 	font-weight:bold;
 	margin-top:3px;
 	margin-bottom:0px;
