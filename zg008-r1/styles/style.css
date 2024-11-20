@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "Grotesk-Regular";
-	src: url("../fonts/HKGrotesk-Thin.woff") format("woff");
+	src: url("../fonts/HKGrotesk-Regular.woff") format("woff");
 }
 
 @font-face {
         font-family: "Grotesk-Bold";
-        src: url("../fonts/HKGrotesk-Medium.woff") format("woff");
+        src: url("../fonts/HKGrotesk-MediumItalic.woff") format("woff");
 }
 
 body {
@@ -73,6 +73,7 @@ body {
 
 h3 {
 	font-family:Grotesk-Bold;
+	transform: skew(8deg); /*unitalicize the italics*/
 	color:#black;
 	font-size:22px;
 	font-weight:bold;
