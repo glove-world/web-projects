@@ -4,16 +4,25 @@
 }
 
 @font-face {
-        font-family: "Grotesk-Bold";
+        font-family: "Grotesk-MediumItalic";
         src: url("../fonts/HKGrotesk-MediumItalic.woff") format("woff");
+}
+
+:root {
+    --backdrop_color: rgba(255, 255, 255, 1);
+    --border_color_1: rgba(0, 0, 0, 1);
+    --border_color_2: rgba(0, 0, 0, 1);	
+    --text_box_color: rgba(255, 255, 255, 1);
+    --header_text_color: #2c3027;
+    --text_color: rgba(0, 0, 0, 1);
 }
 
 body {
 	font-family:Grotesk-Regular;
 	font-size:11px;
 	line-height:15px;
-	background-image:url(../images/subtle-dots-black.png);
-	background-color:#3b3b3b;
+/*	background-image:url(../images/subtle-dots-black.png);*/
+	background-color: var(--backdrop_color);
 }
 
 .page-centering {
@@ -52,36 +61,37 @@ body {
         justify-content: center;
         padding:7px;
         margin:5px; /*distance between boxes vertically*/
-        border-left:1px solid #b5b5b5;
-        border-top:1px solid #b5b5b5;
-        border-right:2px solid #000000;
-        border-bottom:2px solid #000000;
+        border-left:1px solid var(--border_color_1);
+        border-top:1px solid var(--border_color_1);
+        border-right:1px solid var(--border_color_2);
+        border-bottom:1px solid var(--border_color_2);
 	background-size:cover;
-	background-image:url(../images/sinew-miracle-banner.png);
-        background-color:#d9d9d9;
+/*	background-image:url(../images/sinew-miracle-banner.png);*/
+        background-color: var(--text_box_color);
 }
 
 .index, .content{
 	padding:7px;
 	margin:5px; /*distance between boxes vertically*/ 
-	border-left:1px solid #b5b5b5;
-	border-top:1px solid #b5b5b5;
-	border-right:2px solid #000000;
-	border-bottom:2px solid #000000;
-	background-color:#d9d9d9;
+	border-left:1px solid var(--border_color_1);
+        border-top:1px solid var(--border_color_1);
+        border-right:1px solid var(--border_color_2);
+        border-bottom:1px solid var(--border_color_2);
+	background-color: var(--text_box_color);
 }
 
 h3 {
-	font-family:Grotesk-Bold;
+	font-family:Grotesk-MediumItalic;
 	transform: skew(8deg); /*unitalicize the italics*/
-	color:#black;
-	font-size:22px;
-	font-weight:bold;
-	margin-top:3px;
-	margin-bottom:0px;
+	color: var(--text_color);
+	font-size: large;
+	margin-top: 5px;
+	margin-bottom: 40px;
 }
 
-button {
-	color:#b22222;
-
+p {
+	font-family:Grotesk-Regular;
+	color: var(--text_color);
+	font-size: small;
+	margin-top: 0px;
 }
